@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+  <br>
+  <br>
+  <div class="row">
+      <div class="col-sm-8 blog-main">
+         {% for entry in entries %}
+            <div class="blog-post">
+              <h2 class="blog-post-title"><a href="{{ url_for('post', id=entry.id) }}">{{ entry.title }}</a></h2><hr>
+              <p class="blog-post-meta"><a href="{{ url_for('post', id=entry.id) }}">{{ entry.timestamp.strftime('%Y-%m-%d %H:%M') }}</a></p>
+              <p>{{ entry.text|safe }}</p>
+            </div>
+          {% else %}
+              <div>No entries here so far</div>
+          {% endfor %}
+        </div>
+
+  </div>
+
+{% endblock %}
