@@ -2,7 +2,6 @@ blinker==1.4
 boto==2.6.0
 Django==1.7.10
 docutils==0.10
-elementtree==1.2.7-20070827-preview
 Flask==0.10.1
 Flask-Mail==0.9.1
 Flask-SQLAlchemy==2.1
