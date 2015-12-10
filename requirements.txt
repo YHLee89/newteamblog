@@ -23,9 +23,7 @@ pyparsing==1.5.5
 pysqlite==2.6.3
 python-ldap==2.4.10
 python-Levenshtein==0.10.2
-python-openid==2.2.5
-PyXML==0.8.4
-PyYAML==3.10
+python-openid==2.2.5PyYAML==3.10
 reportlab==2.5
 simplejson==2.0.9
 six==1.7.3
