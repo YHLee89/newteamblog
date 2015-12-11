@@ -93,13 +93,13 @@
       nodes[node].uri = cur_uri;
       nodes[node].color = cat;
       if (text_len<100) {
+        nodes[node].value = 16;
+      }
+      else if(text_len<500) {
         nodes[node].value = 8;
       }
-      else if(text_len<1000) {
-        nodes[node].value = 12;
-      }
       else {
-        nodes[node].value = 16;
+        nodes[node].value = 12;
       }
     }
     {% endfor %}

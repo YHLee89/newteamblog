@@ -25,7 +25,7 @@ app.config.update(dict(
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True,
     USERNAME='admin',
     PASSWORD='default',
-    PER_PAGE=10,
+    PER_PAGE=100,
     MAIL_SERVER = 'smtp.gmail.com',
     MAIL_PORT = 587,
     MAIL_USE_TLS = True,
